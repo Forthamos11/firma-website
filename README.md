@@ -1,4 +1,4 @@
-- [ ] Header functional
+- [x] Header functional
 - [ ] Bottom bar
 - [ ] graphs through mockdata
 - [ ] shop interface

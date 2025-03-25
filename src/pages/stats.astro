@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+const response = await fetch("https://67e2ce7297fc65f53537aaed.mockapi.io/api/v1/recentbuys");
+const data = await response.json();
+---
+
+<Layout>
+    <div class="grid text-white grid-cols-12">
+        {data.map((item) => 
+        <ul class="text-black bg-[#d9d9d9] m-3 rounded-md flex justify-center items-center w-min p-4">
+            <li><span class="text-fuchsia-700">{item.value}€</span> ausgegeben für: <span class="text-fuchsia-700">{item.Product}</span> von <span class="text-fuchsia-700">{item.Departmentofuse}</span></li>
+        </ul>
+        )}
+    </div>
+</Layout>
