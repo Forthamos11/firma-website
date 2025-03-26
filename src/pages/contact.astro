@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="grid grid-cols-2 p-4 gap-4">
+        <input type="text" placeholder="Firma" class="border-2 rounded-md p-2 w-full placerholder-black bg-[#102e4a] col-span-2">
+        <select name="Anrede" class="border-2 rounded-md p-2 w-full placerholder-black bg-[#102e4a]"> <option value="Frau">Frau</option> <option value="Herr">Herr</option> </select>
+        <select name="Titel" class="border-2 rounded-md p-2 w-full placerholder-black bg-[#102e4a]"> <option value="Dr">Dr.</option> <option value="Prof">Prof.</option> <option value="Ing.">Ing.</option> </select>
+        <input type="text" placeholder="Name" class="border-2 rounded-md p-2 w-full placerholder-black bg-[#102e4a]">
+        <input type="text" placeholder="Vorname" class="border-2 rounded-md p-2 w-full placerholder-black bg-[#102e4a]">
+    </div>
+</Layout>
