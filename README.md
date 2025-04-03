@@ -2,5 +2,5 @@
 - [ ] Bottom bar
 - [ ] graphs through mockdata
 - [ ] shop interface
-- [ ] source code
-- [ ] author
+- [x] source code
+- [x] author

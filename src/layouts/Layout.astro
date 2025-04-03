@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Topnav from "../components/topnav.astro";
+import Bottomnav from "../components/bottomnav.astro";
 ---
 
 
@@ -9,14 +10,16 @@ import Topnav from "../components/topnav.astro";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/nuttnlogo.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Thomann</title>
 	</head>
 	<body class="bg-black text-white">
 		<Topnav />
 		<slot />
+		<Bottomnav class="inset-x-0 bottom-0" />
 	</body>
+	
 </html>
 
 <style>
